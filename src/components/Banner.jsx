@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import Link from "next/link";
 export default function Banner() {
   return (
     <div className="px-4 bg-gray-800">
@@ -35,19 +36,20 @@ export default function Banner() {
             />
           </div>
           <div className="space-x-2 mt-3 lg:space-x-4 flex">
-            <a
-              href="/resume.pdf"
+            <Link
+              href="https://docs.google.com/document/d/e/2PACX-1vT2HZLgQzhyhgF8FUt3XrBSEQwDhN6LRGeXptyFSWWABhRJ-5lkUeKS-XzDkHlN2OOKjZYsFjxvQOv9/pub"
+              target="_blank"
               className="btn bg-white text-black lg:px-6 px-3 py-2 rounded-md hover:bg-gray-200 transition"
               download
             >
               Download Resume
-            </a>
-            <a
-              href="mailto:your-email@example.com"
+            </Link>
+            <Link
+              href="/#contact"
               className="btn bg-transparent border-2 border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition"
             >
               Hire Me
-            </a>
+            </Link>
           </div>
         </div>
 

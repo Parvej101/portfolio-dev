@@ -2,8 +2,8 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 export default function Navbar() {
-   // Define the navigation options in an array
-   const navOptions = [
+  // Define the navigation options in an array
+  const navOptions = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#skills", label: "Skills" },
@@ -38,28 +38,37 @@ export default function Navbar() {
             >
               {navOptions.map((option) => (
                 <li key={option.href}>
-                  <Link href={option.href}>
-                    {option.label}
-                  </Link>
+                  <Link href={option.href}>{option.label}</Link>
                 </li>
               ))}
             </ul>
           </div>
-         <div className="bg-white rounded-full"> <Link href={'#home'}><Image src="/images/logo.png" alt="Logo" width={50} height={50} /></Link></div>
+          <div className="bg-white rounded-full">
+            {" "}
+            <Link href={"#home"}>
+              <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
+            </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal space-x-6">
-          {navOptions.map((option) => (
-                <li key={option.href}>
-                  <Link href={option.href} className="hover:text-gray-300">
-                    {option.label}
-                  </Link>
-                </li>
-              ))}
+            {navOptions.map((option) => (
+              <li key={option.href}>
+                <Link href={option.href} className="hover:text-gray-300">
+                  {option.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn hover:bg-gray-300">Resume</a>
+          <Link
+            href="https://docs.google.com/document/d/e/2PACX-1vT2HZLgQzhyhgF8FUt3XrBSEQwDhN6LRGeXptyFSWWABhRJ-5lkUeKS-XzDkHlN2OOKjZYsFjxvQOv9/pub"
+            target="_blank"
+            className="btn hover:bg-gray-300"
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </nav>
