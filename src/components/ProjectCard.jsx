@@ -9,10 +9,12 @@ import "swiper/css/pagination";
 import Image from "next/image";
 
 export default function ProjectCard({ project }) {
+  console.log(project.images); // Ensure you're logging the images
+
   return (
     <div className="">
       <motion.div
-        className="bg-gray-800 text-white p-4 sm:p-5 rounded-lg shadow-lg "
+        className="bg-gray-800 text-white p-4 sm:p-5 rounded-lg shadow-lg"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -34,8 +36,8 @@ export default function ProjectCard({ project }) {
             <SwiperSlide key={index}>
               <div className="relative h-48 sm:h-56 md:h-60">
                 <Image
-                  src={img.src}
-                  alt={project.name}
+                  src={img.src} // Ensure the path starts with '/'
+                  alt={img.alt} // Use the correct alt text for the image
                   layout="fill"
                   objectFit="cover"
                   className="rounded-lg"

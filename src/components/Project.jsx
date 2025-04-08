@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import ProjectCard from "./ProjectCard";
 const projects = [
   {
@@ -6,9 +7,9 @@ const projects = [
     description:
       "A platform for managing classes, connecting tutors with students, and streamlining the educational experience.",
     images: [
-      { src: "/images/p1.jpg", alt: "Class Vault" },
-      { src: "/images/p2.jpg", alt: "Class Vault" },
-      { src: "/images/p3.jpg", alt: "Class Vault" },
+      { src: "/images/p1.jpg", alt: "Class Vault image 1" },
+      { src: "/images/p2.jpg", alt: "Class Vault image 2" },
+      { src: "/images/p3.jpg", alt: "Class Vault image 3" },
     ],
     liveLink: "https://class-vault.web.app/",
     githubLink: "https://github.com/Parvej101/class-vault-client",
@@ -18,9 +19,9 @@ const projects = [
     description:
       "A community-driven platform that connects individuals with resources, support, and services to promote well-being and personal growth.",
     images: [
-      { src: "images/b1.jpg", alt: "Hope Hive" },
-      { src: "images/b2.jpg", alt: "Hope Hive" },
-      { src: "/images/b3.jpg", alt: "Hope Hive" },
+      { src: "/images/b1.jpg", alt: "Hope Hive image 1" },
+      { src: "/images/b2.jpg", alt: "Hope Hive image 2" },
+      { src: "/images/b3.jpg", alt: "Hope Hive image 3" },
     ],
     liveLink: "https://hope-hive.web.app/",
     githubLink: "https://github.com/Parvej101/hope-hive-client",
