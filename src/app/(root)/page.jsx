@@ -1,5 +1,6 @@
 import About from '@/components/About';
 import Banner from '@/components/Banner';
+import ChatWithGemini from '@/components/ChatWithGemini';
 import ContactSection from '@/components/ContactSection';
 import Project from '@/components/Project';
 import SkillsCard from '@/components/SkillsCard';
@@ -13,6 +14,7 @@ const Homepage = () => {
       <SkillsCard></SkillsCard>
       <Project></Project>
       <ContactSection></ContactSection>
+      <ChatWithGemini></ChatWithGemini>
     </div>
   );
 };
