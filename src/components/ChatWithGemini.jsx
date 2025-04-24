@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 const ChatWithGemini = () => {
   const [input, setInput] = useState('');
@@ -30,10 +30,7 @@ const ChatWithGemini = () => {
     setLoading(false);
   };
 
-  // Auto scroll to latest message
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
+
 
   return (
     <section className="bg-gray-900 min-h-screen flex items-center justify-center px-2 py-10">
