@@ -1,10 +1,11 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const ChatWithGemini = () => {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
+  const messagesEndRef = useRef(null);
 
   const handleSend = async () => {
     if (!input.trim()) return;
@@ -29,12 +30,19 @@ const ChatWithGemini = () => {
     setLoading(false);
   };
 
-  return (
-    <section className="bg-gray-900 py-10 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto bg-gray-100 shadow-lg rounded-xl p-4 sm:p-6">
-        <h2 className="text-lg sm:text-xl font-bold mb-4">🤖 Ask Joglu Anything</h2>
+  // Auto scroll to latest message
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
 
-        <div className="space-y-2 max-h-64 sm:max-h-80 md:max-h-96 overflow-y-auto mb-4">
+  return (
+    <section className="bg-gray-900 min-h-screen flex items-center justify-center px-2 py-10">
+      <div className="w-full max-w-4xl bg-gray-100 shadow-lg rounded-xl flex flex-col h-[70vh] sm:h-[65vh] md:h-[60vh] overflow-hidden">
+        <h2 className="text-lg sm:text-xl font-bold p-4 border-b border-gray-300">
+          🤖 Ask Joglu Anything
+        </h2>
+
+        <div className="flex-1 overflow-y-auto px-4 py-2 space-y-2">
           {messages.map((msg, idx) => (
             <div
               key={idx}
@@ -49,9 +57,10 @@ const ChatWithGemini = () => {
               </p>
             </div>
           ))}
+          <div ref={messagesEndRef} />
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-2 pb-2 sm:pb-4">
+        <div className="p-3 border-t border-gray-300 flex flex-col sm:flex-row gap-2">
           <input
             type="text"
             className="flex-1 border border-gray-300 rounded px-3 py-2"
