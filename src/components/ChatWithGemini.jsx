@@ -33,7 +33,7 @@ const ChatWithGemini = () => {
 
 
   return (
-    <section className="bg-gray-900 font-mono min-h-screen flex items-center justify-center px-2 py-10">
+    <section className="bg-gray-900 font-mono  flex items-center justify-center px-4 py-10">
       <div className="w-full max-w-4xl bg-black border-2 border-green-500/50 shadow-lg shadow-green-500/20 rounded-lg flex flex-col h-[80vh] sm:h-[75vh] md:h-[70vh] overflow-hidden">
         <h2 className="text-lg sm:text-xl font-bold p-3 border-b-2 border-green-500/50 text-green-400">
           🤖 Ask Joglu Anything

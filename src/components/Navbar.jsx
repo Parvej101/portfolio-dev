@@ -11,7 +11,7 @@ export default function Navbar() {
     { href: "#contact", label: "Contact" },
   ];
   return (
-    <nav className="bg-gray-900 text-white sticky top-0 z-50  ">
+    <nav className="bg-gray-900 text-white sticky top-0 z-50 px-4 ">
       <div className="navbar py-4 shadow-sm max-w-7xl mx-auto px-4 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -43,8 +43,8 @@ export default function Navbar() {
               ))}
             </ul>
           </div>
-          <div className="bg-white rounded-full">
-            {" "}
+          <div className="bg-white rounded-full ">
+       
             <Link href={"#home"}>
               <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
             </Link>
