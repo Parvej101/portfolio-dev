@@ -37,10 +37,11 @@ export default function Banner() {
           </div>
           <div className="space-x-2 mt-3 lg:space-x-4 flex">
             <Link
-              href="https://docs.google.com/document/d/e/2PACX-1vT2HZLgQzhyhgF8FUt3XrBSEQwDhN6LRGeXptyFSWWABhRJ-5lkUeKS-XzDkHlN2OOKjZYsFjxvQOv9/pub"
+              href="/MH_Parvej_Resume.pdf"
               target="_blank"
               className="btn bg-white text-black lg:px-6 px-3 py-2 rounded-md hover:bg-gray-200 transition"
-              download
+              rel="noopener noreferrer"
+              download="MH_Parvej_Resume.pdf"
             >
               Download Resume
             </Link>

@@ -63,9 +63,11 @@ export default function Navbar() {
         </div>
         <div className="navbar-end">
           <Link
-            href="https://docs.google.com/document/d/e/2PACX-1vT2HZLgQzhyhgF8FUt3XrBSEQwDhN6LRGeXptyFSWWABhRJ-5lkUeKS-XzDkHlN2OOKjZYsFjxvQOv9/pub"
+            href="/MH_Parvej_Resume.pdf"
             target="_blank"
             className="btn hover:bg-gray-300"
+            rel="noopener noreferrer"
+            download="MH_Parvej_Resume.pdf"
           >
             Resume
           </Link>
