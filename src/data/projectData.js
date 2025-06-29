@@ -1,6 +1,22 @@
 
 export const projects = [
   {
+    name: "Overtime Calculator",
+    description: "A modern, full-stack web application designed to simplify and automate the complex process of calculating employee overtime. This powerful tool allows for precise tracking of daily attendance, calculates overtime based on custom duty hours, and generates comprehensive monthly payroll reports.",
+    images: [
+      { src: "/images/otCalculator/ot1.jpg", alt: "OverTime Calculator Screenshot 1" },
+      { src: "/images/otCalculator/ot2.jpg", alt: "OverTime Calculator Screenshot 2" },
+      { src: "/images/otCalculator/ot3.jpg", alt: "OverTime Calculator Screenshot 3" },
+      { src: "/images/otCalculator/ot4.jpg", alt: "OverTime Calculator Screenshot 4" },
+      { src: "/images/otCalculator/ot5.jpg", alt: "OverTime Calculator Screenshot 5" },
+      { src: "/images/otCalculator/ot6.jpg", alt: "OverTime Calculator Screenshot 6" },
+    
+   
+    ],
+    liveLink: "https://overtime-calculate.vercel.app",
+    githubLink: "https://github.com/Parvej101/OvertimeCalculate",
+  },
+  {
     name: "Class Vault",
     description: "A platform for managing classes, connecting tutors with students, and streamlining the educational experience.",
     images: [
@@ -23,14 +39,18 @@ export const projects = [
     githubLink: "https://github.com/Parvej101/hope-hive-client",
   },
   {
-    name: "Project Three", // উদাহরণ হিসেবে তৃতীয় একটি প্রজেক্ট
-    description: "This is another awesome project showcasing different skills and technologies.",
+    name: "Study Buddy",
+    description: "An interactive web application designed to streamline the entire assignment lifecycle, from creation and submission to peer-review and grading, promoting a productive study group dynamic.",
     images: [
-      { src: "/images/a1.jpg", alt: "Project Three Screenshot 1" },
-      { src: "/images/a2.jpg", alt: "Project Three Screenshot 2" },
-      { src: "/images/a3.jpg", alt: "Project Three Screenshot 3" },
+      { src: "/images/studyBuddy/studybuddy1.jpg", alt: "studyBuddy Three Screenshot 1" },
+      { src: "/images/studyBuddy/studybuddy2.jpg", alt: "studyBuddy Three Screenshot 2" },
+      { src: "/images/studyBuddy/studybuddy3.jpg", alt: "studyBuddy Three Screenshot 3" },
+      { src: "/images/studyBuddy/studybuddy4.jpg", alt: "studyBuddy Three Screenshot 4" },
+      { src: "/images/studyBuddy/studybuddy5.jpg", alt: "studyBuddy Three Screenshot 5" },
+      { src: "/images/studyBuddy/studybuddy6.jpg", alt: "studyBuddy Three Screenshot 6" },
+      { src: "/images/studyBuddy/studybuddy7.jpg", alt: "studyBuddy Three Screenshot 7" },
     ],
-    liveLink: "https://www.pawsandbeyondbd.com", // আপনার লাইভ লিঙ্ক দিন
-    githubLink: "https://github.com/Parvej101/", // আপনার গিটহাব লিঙ্ক দিন
+    liveLink: "https://study-buddy-1d441.web.app",
+    githubLink: "https://github.com/Parvej101/study-buddy-client", 
   },
 ];
