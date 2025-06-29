@@ -33,9 +33,9 @@ const ChatWithGemini = () => {
 
 
   return (
-    <section className="bg-gray-900 min-h-screen flex items-center justify-center px-2 py-10">
-      <div className="w-full max-w-4xl bg-gray-100 shadow-lg rounded-xl flex flex-col h-[70vh] sm:h-[65vh] md:h-[60vh] overflow-hidden">
-        <h2 className="text-lg sm:text-xl font-bold p-4 border-b border-gray-300">
+    <section className="bg-gray-900 font-mono min-h-screen flex items-center justify-center px-2 py-10">
+      <div className="w-full max-w-4xl bg-black border-2 border-green-500/50 shadow-lg shadow-green-500/20 rounded-lg flex flex-col h-[80vh] sm:h-[75vh] md:h-[70vh] overflow-hidden">
+        <h2 className="text-lg sm:text-xl font-bold p-3 border-b-2 border-green-500/50 text-green-400">
           🤖 Ask Joglu Anything
         </h2>
 
@@ -57,19 +57,19 @@ const ChatWithGemini = () => {
           <div ref={messagesEndRef} />
         </div>
 
-        <div className="p-3 border-t border-gray-300 flex flex-col sm:flex-row gap-2">
+        <div className="p-3 border-t border-green-400 flex flex-col sm:flex-row gap-2 text-white">
           <input
             type="text"
-            className="flex-1 border border-gray-300 rounded px-3 py-2"
+            className="flex-1 border border-green-300 rounded px-3 py-2"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="e.g. Tell me about yourself"
+            placeholder="How can I help you?"
             onKeyDown={(e) => e.key === 'Enter' && handleSend()}
           />
           <button
             onClick={handleSend}
             disabled={loading}
-            className="btn border border-black bg-white hover:bg-gray-300 py-2 px-4 rounded"
+            className="btn border border-green-400 bg-green-400 hover:bg-green-300 py-2 px-4 rounded"
           >
             {loading ? 'Thinking...' : 'Send'}
           </button>

@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import Image from "next/image";
 
 export default function ProjectCard({ project }) {
-  console.log(project.images); // Ensure you're logging the images
+ 
 
   return (
     <div className="">
@@ -36,8 +36,8 @@ export default function ProjectCard({ project }) {
             <SwiperSlide key={index}>
               <div className="relative h-48 sm:h-56 md:h-60">
                 <Image
-                  src={img.src} // Ensure the path starts with '/'
-                  alt={img.alt} // Use the correct alt text for the image
+                  src={img.src} 
+                  alt={img.alt} 
                   layout="fill"
                   objectFit="cover"
                   className="rounded-lg"
