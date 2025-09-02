@@ -12,13 +12,13 @@ export default function Banner() {
         <div className="w-full md:w-1/2 lg:space-y-6 p-5">
           <div>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 ">
-              Hi, I am MH Parvej
+              I'm Parvej, 
+              <p className="text-xl py-2">I build modern web solutions with React,Next.js, Node.js, and MongoDB</p>
             </h1>
           </div>
           <div>
             <p className="text-base sm:text-lg md:text-xl mb-3">
-              A passionate Frontend Developer who loves crafting interactive and
-              responsive web applications.
+              As a MERN Stack Developer, I specialize in building full-stack web applications from scratch. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Whether you need a dynamic e-commerce site or a data-driven admin dashboard, I can help bring your vision to life.
             </p>
           </div>
           {/* Typing Effect */}
@@ -63,7 +63,7 @@ export default function Banner() {
         >
           <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] mt-3">
             <Image
-              src="/images/parvej-banner.jpg"
+              src="/images/formal-mh.jpg"
               alt="MH Parvej"
               layout="fill"
               objectFit="cover"
