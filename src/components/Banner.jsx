@@ -9,16 +9,16 @@ export default function Banner() {
     <div className="px-4 bg-gray-800">
       <section className="flex flex-col md:flex-row items-center justify-around lg:py-24 py-10 text-white max-w-7xl mx-auto px-4 min-h-screen">
         {/* Left side - Text */}
-        <div className="w-full md:w-1/2 lg:space-y-6 p-5">
+        <div className="w-full md:w-1/2 lg:space-y-6 ">
           <div>
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 ">
-              I'm Parvej, 
-              <p className="text-xl py-2">I build modern web solutions with React,Next.js, Node.js, and MongoDB</p>
+             I'm Parvej,
+              <p className="lg:text-2xl text-base font-bold py-2"> A MERN Stack Developer building high-performance web applications.</p>
             </h1>
           </div>
           <div>
             <p className="text-base sm:text-lg md:text-xl mb-3">
-              As a MERN Stack Developer, I specialize in building full-stack web applications from scratch. I enjoy turning complex problems into simple, beautiful, and intuitive designs. Whether you need a dynamic e-commerce site or a data-driven admin dashboard, I can help bring your vision to life.
+              From dynamic e-commerce sites to data-driven dashboards, I turn complex ideas into simple, intuitive, and beautiful user experiences.
             </p>
           </div>
           {/* Typing Effect */}
@@ -61,13 +61,12 @@ export default function Banner() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
-          <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] mt-3">
+          <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] mt-8">
             <Image
               src="/images/formal-mh.jpg"
               alt="MH Parvej"
-              layout="fill"
-              objectFit="cover"
-              className="rounded-full shadow-lg"
+              fill
+              className="rounded-full shadow-lg object-cover"
             />
             <motion.div
               className="absolute top-0 left-0 w-full h-full bg-gray-200 opacity-20 rounded-full"

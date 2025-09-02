@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import ThemeSwitch from "./ThemeSwitch";
 export default function Navbar() {
   // Define the navigation options in an array
   const navOptions = [
@@ -11,8 +12,8 @@ export default function Navbar() {
     { href: "#contact", label: "Contact" },
   ];
   return (
-    <nav className="bg-gray-900 text-white sticky top-0 z-50 px-4 ">
-      <div className="navbar py-4 shadow-sm max-w-7xl mx-auto px-4 ">
+    <nav className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white sticky top-0 z-50 px-4 ">
+      <div className="navbar py-4  max-w-7xl mx-auto px-4 ">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,7 +35,7 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-gray-900 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-white dark:bg-gray-900 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               {navOptions.map((option) => (
                 <li key={option.href}>
@@ -43,7 +44,7 @@ export default function Navbar() {
               ))}
             </ul>
           </div>
-          <div className="bg-white rounded-full ">
+          <div className="dark:bg-gray-100  rounded-full ">
        
             <Link href={"#home"}>
               <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
@@ -62,10 +63,11 @@ export default function Navbar() {
           </ul>
         </div>
         <div className="navbar-end">
+          <ThemeSwitch />
           <Link
             href="/MH_Parvej_Resume.pdf"
             target="_blank"
-            className="btn hover:bg-gray-300"
+            className="btn hover:bg-gray-300 ml-5"
             rel="noopener noreferrer"
             download="MH_Parvej_Resume.pdf"
           >

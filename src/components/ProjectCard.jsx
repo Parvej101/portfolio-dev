@@ -9,8 +9,6 @@ import "swiper/css/pagination";
 import Image from "next/image";
 
 export default function ProjectCard({ project }) {
- 
-
   return (
     <div className="bg-gray-800 text-white p-4 sm:p-5 rounded-lg shadow-lg h-full flex flex-col">
       <motion.div
@@ -35,12 +33,12 @@ export default function ProjectCard({ project }) {
           {project.images.map((img, index) => (
             <SwiperSlide key={index}>
               <div className="relative h-48 sm:h-56 md:h-72">
+                
                 <Image
-                  src={img.src} 
-                  alt={img.alt} 
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-lg"
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="rounded-lg object-cover"
                 />
               </div>
             </SwiperSlide>
