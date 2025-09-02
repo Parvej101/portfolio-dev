@@ -13,8 +13,8 @@ export const projects = [
     
    
     ],
-    liveLink: "https://overtime-calculate.vercel.app",
-    githubLink: "https://github.com/Parvej101/OvertimeCalculate",
+    liveLink: "https://overtime-calculate-client.vercel.app",
+    githubLink: "https://github.com/Parvej101/overtimeCalculateClient",
   },
   {
     name: "Class Vault",
