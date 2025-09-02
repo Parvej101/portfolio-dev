@@ -61,7 +61,7 @@ export default function Banner() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
-          <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] mt-8">
+          <div className="relative w-60 h-60 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] mt-4">
             <Image
               src="/images/formal-mh.jpg"
               alt="MH Parvej"
